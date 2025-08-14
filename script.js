@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', function (event) {
             event.preventDefault();
             const userId = Telegram.WebApp.initDataUnsafe.user.id;
-            const chatId = Telegram.WebApp.initDataUnsafe.chat.id;
-            let url = this.dataset.url + '&user=' + userId + '&chat=' + chatId;
+            let url = this.dataset.url + '&user=' + userId;
             window.open(url, '_blank');
         })
     })
